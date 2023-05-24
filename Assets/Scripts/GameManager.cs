@@ -14,22 +14,50 @@ public class GameManager : MonoBehaviour
 
     public Text computerscoreText;
 
+    public Text gameEndText;
+
     private int _playerScore;
 
     private int _computerScore;
 
+    private int scoreLimit = 10; 
+
+    private bool isGameActive = true;
+
     public void PlayerScores()
     {
-
-        _playerScore++;
-        this.playerScoreText.text = _playerScore.ToString();
-        ResetRound();
+        if (isGameActive)
+        {
+            _playerScore++;
+            this.playerScoreText.text = _playerScore.ToString();
+            CheckScore();
+            ResetRound();
+        }
     }
     public void ComputerScores()
     {
-        _computerScore++;
-        this.computerscoreText.text = _computerScore.ToString();
-        ResetRound();
+        if (isGameActive)
+        {
+            _computerScore++;
+            this.computerscoreText.text = _computerScore.ToString();
+            CheckScore();
+            ResetRound();
+        }
+    }
+
+    private void CheckScore()
+    {
+        if (_playerScore >= scoreLimit)
+        {
+            gameEndText.text = "YOU WON!!!";
+            isGameActive = false;
+        }
+        else if (_computerScore >= scoreLimit)
+        {
+            gameEndText.text = "You lost, try again";
+            isGameActive = false;
+
+        }
     }
 
     private void ResetRound()
@@ -44,6 +72,7 @@ public class GameManager : MonoBehaviour
     {
         _playerScore = 0;
         _computerScore = 0;
+        gameEndText.text = "";
         this.playerScoreText.text = _playerScore.ToString();
         this.computerscoreText.text = _computerScore.ToString();
         ResetRound();
