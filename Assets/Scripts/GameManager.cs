@@ -51,11 +51,13 @@ public class GameManager : MonoBehaviour
         {
             gameEndText.text = "YOU WON!!!";
             isGameActive = false;
+            Time.timeScale = 0;
         }
         else if (_computerScore >= scoreLimit)
         {
             gameEndText.text = "You lost, try again";
             isGameActive = false;
+            Time.timeScale = 0;
 
         }
     }
@@ -75,6 +77,23 @@ public class GameManager : MonoBehaviour
         gameEndText.text = "";
         this.playerScoreText.text = _playerScore.ToString();
         this.computerscoreText.text = _computerScore.ToString();
+        Time.timeScale = 1;
+        ResetRound();
+    }
+
+    public void RestartGame()
+    {
+        _playerScore = 0;
+        _computerScore = 0;
+        gameEndText.text = "";
+        this.playerScoreText.text = _playerScore.ToString();
+        this.computerscoreText.text = _computerScore.ToString();
+        this.playerPaddle.ResetPostion();
+        this.computerPaddle.ResetPostion();
+        this.ball.ResetPostion();
+        this.ball.AddStartingForce();
+        Time.timeScale = 1;
+        isGameActive = true;
         ResetRound();
     }
 
