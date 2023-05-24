@@ -18,11 +18,8 @@ public class GameManager : MonoBehaviour
 
     private int _computerScore;
 
-    public bool isGameStarted = false;
-
     public void PlayerScores()
     {
-        if (!isGameStarted) return;
 
         _playerScore++;
         this.playerScoreText.text = _playerScore.ToString();
@@ -30,8 +27,6 @@ public class GameManager : MonoBehaviour
     }
     public void ComputerScores()
     {
-        if (!isGameStarted) return;
-
         _computerScore++;
         this.computerscoreText.text = _computerScore.ToString();
         ResetRound();
@@ -47,7 +42,6 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        isGameStarted = true;
         _playerScore = 0;
         _computerScore = 0;
         this.playerScoreText.text = _playerScore.ToString();
