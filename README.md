@@ -27,6 +27,11 @@
 * As a user, I want to be able to choose the level of difficulty.
 * As a user, I want to play other games in the site.
 
+## Roadblocks I have faced
+#### Undoubtedly, this experience was intellectually stimulating and enlightening, although it presented a fair share of challenges. Primarily, my task was to grasp the fundamentals of C# within a span of one week. Among the many intricacies of the language, one particular aspect that consistently proved to be a hurdle was the correct use of semicolons. The frequency with which I overlooked this seemingly minor detail resulted in countless occasions where I was compelled to revisit my code. The process of painstakingly combing through lines of code to identify a single omission was time-consuming and often took upwards of thirty minutes.
+
+#### In the initial stages, harnessing the power of Unity to create functioning models seemed like an arduous task. However, with concerted effort in reading relevant literature and watching instructional tutorials, my understanding gradually improved, enabling me to utilize Unity effectively.
+
 ## Resources
 * https://www.w3schools.com/cs/cs_intro.php
 * https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates
