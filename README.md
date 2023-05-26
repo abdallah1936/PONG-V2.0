@@ -17,12 +17,15 @@
 ## User stories (MVP)
 * As a user, I want to be able to play the game on my desktop using my up,down, W, and S keys to move the posts.
 * As a user, I want the app to be responsive and bug free.
-* As a user, I want to see my score in real time 
+* As a user, I want to see my score in real time.
+* As a user, I want to be able to play aginst the computer. 
 ## Strech Goals
+* As a user, I want to be able to play this game on the web.
 * As a user, I want to be able to play it on mobile.
 * As a user, I want to choose the speed of the ball.
-* As a user, I want to play other games in the site.
 * As a user, I want to be able to play with ramdoms online.
+* As a user, I want to be able to choose the level of difficulty.
+* As a user, I want to play other games in the site.
 
 ## Resources
 * https://www.w3schools.com/cs/cs_intro.php
