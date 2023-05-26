@@ -6,6 +6,14 @@
 ## WireFrame
 ![wireFrame](./images/wireFrame.png)
 
+## Outcome
+
+### Starting page
+![wireFrame](./images/StartPage.png)
+
+### Game page
+![wireFrame](./images/GamePage.png)
+
 ## Timeline
 ![timeLine](./images/timeline.png)
 
